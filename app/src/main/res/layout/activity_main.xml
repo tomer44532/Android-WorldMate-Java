@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/main_activity_id">
+
+
+<androidx.drawerlayout.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar"
+                android:background="?attr/colorPrimaryDark"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_filter"
+                            android:scaleType="fitCenter"
+                            android:padding="10dp"
+                            android:id="@+id/filter_root_view"/>
+
+
+
+<!--                    <Spinner android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_alignParentEnd="true"
+                        android:dropDownSelector="@drawable/spinner_background"
+                        android:padding="15dp"
+                        android:background="@color/transparent"
+                        android:id="@+id/filter_spinner"/>-->
+
+
+
+
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <FrameLayout
+                android:id="@+id/flContent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <FrameLayout
+                    android:id="@+id/flContent_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--<ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_launcher"
+                        android:id="@+id/main_loader"
+                        android:layout_gravity="center"
+                        android:visibility="gone"/>-->
+                    <com.github.ybq.android.spinkit.SpinKitView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/spin_kit"
+                        style="@style/SpinKitView.Large.WanderingCubes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        app:SpinKit_Color="@color/Blue" />
+                </FrameLayout>
+
+
+            </FrameLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:id="@+id/navigation_view"
+            app:headerLayout="@layout/header_of_navigation"
+            app:menu="@menu/navigation_menu"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

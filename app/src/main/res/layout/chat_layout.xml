@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/chat_rl_layout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_to_chats_ib"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:background="@color/transparent"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_worlmate_logo"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/back_to_chats_ib"
+            android:id="@+id/profile_image_chat"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profile_image_chat"
+            android:layout_marginTop="2dp"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_name_chat"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/is_online_tv"
+                android:layout_below="@id/profile_name_chat"
+                android:text="@string/online_str"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_rl_layout"
+        android:layout_above="@id/write_send_text_layout"
+        android:background="#EDE9E9"
+        android:id="@+id/messaging_recycler"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/write_send_text_layout">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="65dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="3dp">
+
+            <EditText
+                android:id="@+id/text_chat_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+
+                android:hint="@string/enter_your_text_here" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!--<androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="3dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_marginEnd="5dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp">-->
+
+        <ImageButton
+            android:id="@+id/send_message"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="3dp"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:layout_marginEnd="5dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:src="@drawable/send_selector" />
+
+        <!--</androidx.cardview.widget.CardView>-->
+
+        <!-- <ImageButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_send"
+             android:scaleType="fitCenter"
+             android:layout_marginStart="3dp"
+             android:layout_marginEnd="7dp"
+             android:layout_centerVertical="true"
+             android:layout_alignParentEnd="true"
+             android:id="@+id/send_message"/>-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

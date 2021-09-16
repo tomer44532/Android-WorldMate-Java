@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory
+        android:title="@string/private_str"
+        android:key="private_category">
+
+        <CheckBoxPreference
+            android:title="@string/discovery"
+            android:key="discovery_cb_pref"
+            android:defaultValue="true"
+            android:summary="@string/discovery_desc"/>
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/your_preferences"
+        android:key="your_preference_category">
+
+        <SeekBarPreference
+            android:title="@string/min_age"
+            android:key="min_age_pref1"
+            android:max="100"
+            app:showSeekBarValue="true"
+            app:min="18"
+            app:seekBarIncrement="1" />
+
+        <SeekBarPreference
+            android:title="@string/max_age"
+            android:key="max_age_pref1"
+            android:max="100"
+            app:showSeekBarValue="true"
+            app:min="18"
+            app:seekBarIncrement="1" />
+
+        <MultiSelectListPreference
+            android:entries="@array/multi_entries"
+            android:entryValues="@array/multi_values"
+            android:key="looking_for_pref"
+            android:summary="@string/tap_to_change"
+            android:title="@string/looking_for"/>
+
+        <SeekBarPreference
+            android:title="@string/max_distance_km"
+            android:key="max_distance_pref"
+            app:showSeekBarValue="true"
+            android:max="100"
+            app:min="0"
+            app:seekBarIncrement="1"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/notification"
+        android:key="notif_category">
+
+        <SwitchPreference
+            android:title="@string/new_match_notif"
+            android:key="match_pref"
+            android:defaultValue="true"
+            android:summary="@string/when_got_new_match"/>
+
+        <SwitchPreference
+            android:title="@string/new_message_notif"
+            android:key="message_pref"
+            android:defaultValue="true"
+            android:summary="@string/when_got_new_message"/>
+
+        <SwitchPreference
+            android:title="@string/vibrate"
+            android:defaultValue="false"
+            android:key="vibrate_pref"
+            android:summary="@string/vibrate_new_notif"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/about"
+        android:key="about_category">
+
+        <Preference
+            android:title="@string/we_are"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/version"
+        android:key="version_category">
+
+        <Preference
+            android:title="2.0.1"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WorldMate</string>
+    <string name="home">ראשי</string>
+    <string name="my_profile">הפרופיל שלי</string>
+    <string name="your_matches">ההתאמות שלי</string>
+    <string name="questions">שאלות</string>
+    <string name="settings">הגדרות</string>
+    <string name="messages">הודעות</string>
+    <string name="logout">התנתק</string>
+    <string name="first_name">שם פרטי</string>
+    <string name="last_name">שם משפחה</string>
+    <string name="i_am">מין</string>
+    <string name="men">זכר</string>
+    <string name="women">נקבה</string>
+    <string name="you_must_pick_a_gender">אנא בחר מין</string>
+    <string name="my_birthday_is">תאריך לידה</string>
+    <string name="continue_str">המשך</string>
+    <string name="messaging">הודעות</string>
+    <string name="name_of_profile">שם של הפרופיל</string>
+    <string name="enter_your_text_here">הקלד את הטקסט כאן...</string>
+    <string name="receive_message">הודעה שהתקבלה</string>
+    <string name="date_and_hour">שעה ותאריך</string>
+    <string name="send_message">הודעה שנשלחה</string>
+    <string name="pick_categories">בחר קטגוריות</string>
+    <string name="sport">ספורט</string>
+    <string name="food">אוכל</string>
+    <string name="culture">תרבות</string>
+    <string name="music">מוזיקה</string>
+    <string name="cancel">ביטול</string>
+    <string name="confirm">אישור</string>
+    <string name="match">התאמה!</string>
+    <string name="you_got_a_new_match">יש לך התאמה חדשה!</string>
+    <string name="choose_your_profile_picture">תמונת פרופיל</string>
+    <string name="from_gallery">גלריה</string>
+    <string name="take_picture">צלם עכשיו</string>
+    <string name="prefernce_str">העדפות</string>
+    <string name="discovery_str">גלוי</string>
+    <string name="allowing_other_users_to_see_you">אפשר למשתמשים אחרים לצפות בפרופיל שלך</string>
+    <string name="looking_for_str">מחפש אחר:</string>
+    <string name="maximum_distance_str">מרחק מקסימלי:</string>
+    <string name="_20_km_str">20 ק\"מ</string>
+    <string name="age_range_str">טווח גילאים:</string>
+    <string name="age_int">26</string>
+    <string name="city_str">עיר</string>
+    <string name="change_profile_photo_str">שנה תמונת פרופיל</string>
+    <string name="done_str">סיים</string>
+    <string name="gender_str_with">מין:</string>
+    <string name="about_myself_str">על עצמי</string>
+    <string name="looking_for">מחפש אחר</string>
+    <string name="my_hobbies">התחביבים שלי</string>
+    <string name="title">נושא</string>
+    <string name="_90_compability">90%</string>
+    <string name="my_description_str">התיאור שלי</string>
+    <string name="question_str">שאלה</string>
+    <string name="select_category_str">בחר קטגוריה</string>
+    <string name="sport_cap_lett">ספורט</string>
+    <string name="food_cap_lett">מזון</string>
+    <string name="culture_cap_lett">תרבות</string>
+    <string name="music_cap_lett">מוזיקה</string>
+    <string name="sign_in_str">התחבר</string>
+    <string name="e_mail_str">מייל</string>
+    <string name="password_str">סיסמה</string>
+    <string name="invalid_credentials_str">ערכים לא חוקיים</string>
+    <string name="login_str">היכנס</string>
+    <string name="forgot_password_str">שכחת סיסמא?</string>
+    <string name="don_t_have_account_str">אין לך משתמש?</string>
+    <string name="sign_up_str">הרשמה</string>
+    <string name="register_str">הירשם</string>
+    <string name="already_have_an_account_str">כבר יש לך חשבון?</string>
+    <string name="male">זכר</string>
+    <string name="female">נקבה</string>
+
+
+    <string-array name="multi_entries">
+        <item>"גברים"</item>
+        <item>"נשים"</item>
+    </string-array>
+
+    <string-array name="multi_values">
+        <item>"זכר"</item>
+        <item>"נקבה"</item>
+    </string-array>
+    <string name="take_picture_title">אפשרויות העלאת תמונה</string>
+    <string name="take_picture_description">איך אתה רוצה לקחת את התמונה שלך?</string>
+    <string name="close">סגור</string>
+    <string name="log_as_quest">התחבר כאורח</string>
+    <string name="password_length_error">סיסמה חייבת להיות לפחות 8 אותיות</string>
+    <string name="invalid_credentials">אישורים לא תקפים</string>
+    <string name="user_already_exist">משתמש כבר קיים</string>
+    <string name="error">שגיאה</string>
+    <string name="enter_first_name">בבקשה הכנס שם פרטי</string>
+    <string name="enter_last_name">בבקשה הכנס שם משפחה</string>
+    <string name="preferences">העדפות</string>
+    <string name="discovery">גילוי</string>
+    <string name="discovery_desc">אפשר למשתמשים אחרים לראות אותך</string>
+    <string name="men_str">גברים</string>
+    <string name="women_str">נשים</string>
+    <string name="max_distance">מרחק מקסימלי</string>
+    <string name="kilometer">ק\"מ</string>
+    <string name="max_distance_desc">בחר את המרחק בו אתה מחפש חברים</string>
+    <string name="age_range_desc">איזה גילאים אתה מחפש</string>
+    <string name="hello_guest">שלום אורח</string>
+    <string name="cant_filter_guest">אנחנו מצטערים, אבל אתה לא יכול לסנן בתור אורח</string>
+    <string name="cant_menu_guest">אנחנו מצטערים, אבל אתה יכול ללחוץ רק על בית והתנתקות בתור אורח</string>
+    <string name="ok">אישור</string>
+    <string name="no_more_people">אין אנשים להראות לך</string>
+    <string name="no_mathces_yet">אין לך התאמות</string>
+    <string name="man">גבר</string>
+    <string name="woman">אישה</string>
+    <string name="select_categories_desc">בחר איזה על קטגוריות של שאלות אתה רוצה לענות</string>
+    <string name="sport_title">ספורט</string>
+    <string name="food_title">אוכל</string>
+    <string name="culture_title">תרבות</string>
+    <string name="music_title">מוזיקה</string>
+    <string name="choose_filter_desc">בחר לפי אילו קטגוריות תראה את התאימות</string>
+
+    <string name="private_str">פרטי</string>
+    <string name="min_age">גיל מינימלי</string>
+    <string name="max_age">גיל מקסימלי</string>
+    <string name="your_preferences">העדפות שלך</string>
+    <string name="tap_to_change">לחץ לשנות</string>
+    <string name="max_distance_km">מרחק מקסימלי (ק\"מ)</string>
+    <string name="notification">התראות</string>
+    <string name="new_match_notif">התראת התאמה חדשה</string>
+    <string name="when_got_new_match">כאשר אתה מקבל התאמה חדשה</string>
+    <string name="new_message_notif">התראת הודעה חדשה</string>
+    <string name="when_got_new_message">כאשר אתה מקבל הודעה חדשה</string>
+    <string name="vibrate">רטט</string>
+    <string name="vibrate_new_notif">רטט בזמן התראה</string>
+    <string name="new_match_with">"יש לך התאמה עם "</string>
+    <string name="about">אודות</string>
+    <string name="we_are">אנחנו צוות פיתוח!</string>
+    <string name="version">גרסה</string>
+    <string name="click_here_to_start_chating">התחל שיחה</string>
+    <string name="go_to_chat">עבור לצ\'אט</string>
+    <string name="send_message_str">שלח הודעה</string>
+    <string name="search_chat">חפש שיחה</string>
+    <string name="account_setup">הגדרת חשבון</string>
+    <string name="unmatch_dialog">האם אתה בטוח שאתה רוצה לבטל התאמה עם</string>
+    <string name="no_like">אין אנשים להציג לך</string>
+    <string name="your_likes">הלייקים שלך</string>
+    <string name="matches_and_chat">התאמות ושיחות</string>
+    <string name="online_str">מחובר</string>
+    <string name="offline_str">לא מחובר</string>
+    <string name="religion">דת</string>
+    <string name="travel">טיול</string>
+    <string name="religion_cap">דת</string>
+    <string name="travel_cap">טיול</string>
+    <string name="sent_you">שלח לך:</string>
+    <string name="chat">צ\'אט</string>
+    <string name="in_order_to_see_more_people_please_login_or_register">בשביל לראות אנשים נוספים בבקשה תתחבר או תרשם</string>
+    <string name="login_register">התחבר/הרשם</string>
+    <string name="gender_dialog_error">אתה חייב לבחור לפחות שדה אחד</string>
+
+</resources>

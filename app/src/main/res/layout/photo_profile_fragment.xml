@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_your_profile_picture"
+                android:gravity="center_horizontal"
+                android:layout_marginHorizontal="40dp"
+                android:padding="10dp"
+                android:layout_centerHorizontal ="true"
+                android:background="@drawable/btn_shape_no_stroke"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:id="@+id/choose_photo_tv"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gallery_layout"
+                android:layout_below="@id/choose_photo_tv"
+                android:layout_centerHorizontal="true">
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="50dp"
+                    android:id="@+id/from_gallery"
+                    android:src="@drawable/gallery_icon_black"
+                    android:background="@color/transparent"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/from_gallery"
+                    android:padding="5dp"
+                    android:layout_below="@id/from_gallery"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/camera_layout"
+                android:layout_below="@id/gallery_layout"
+                android:layout_centerHorizontal="true">
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/take_picture"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/camera_icon_black"
+                    android:background="@color/transparent"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_picture"
+                    android:layout_below="@id/take_picture"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+
+            <!--<ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:id="@+id/selected_iv"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:layout_below="@id/camera_layout"/>-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/camera_layout"
+                android:id="@+id/linear_iv_layout"
+                android:layout_centerHorizontal="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:id="@+id/selected_iv"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:visibility="gone"
+                android:foregroundGravity="center"/>
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/black" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_shape_no_stroke"
+                android:layout_below="@id/linear_iv_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="@string/continue_str"
+                android:padding="5dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/continue_btn_photo"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/account_setup_title"
+        android:text="@string/account_setup"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_shape_no_stroke"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstname_info"
+        android:textColorHint="#000"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/account_setup_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/first_name"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZאבגדהוזחטיכלמנסעפצקרשת"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:id="@+id/first_name_et"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastname_info"
+        android:textColorHint="#000"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/firstname_info"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZאבגדהוזחטיכלמנסעפצקרשת"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:hint="@string/last_name"
+            android:inputType="text"
+            android:id="@+id/last_name_et"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/i_am"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@id/lastname_info"
+        android:id="@+id/i_am_tv"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/i_am_tv"
+        android:gravity="center"
+        android:id="@+id/gender_pick_layout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/men"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/gender_btn_selector"
+            android:textColor="#000"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/men_btn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/women"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:background="@drawable/gender_btn_selector"
+            android:id="@+id/women_btn"
+            android:layout_toEndOf="@id/men_btn"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you_must_pick_a_gender"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:textColor="@color/red_stroke"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_below="@id/gender_pick_layout"
+        android:layout_marginTop="25dp"
+        android:id="@+id/gender_error_tv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_birthday_is"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/gender_error_tv"
+        android:layout_marginTop="25dp"
+        android:id="@+id/birthday_tv"/>
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birthday_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="81dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:maxDate="31/12/2000"
+        android:minDate="1/1/1921" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape_no_stroke"
+        android:layout_below="@id/date_picker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/continue_str"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:padding="5dp"
+        android:id="@+id/continue_btn"/>
+</RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
